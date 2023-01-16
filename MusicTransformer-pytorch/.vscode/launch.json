@@ -1,0 +1,50 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+
+        {
+            "name": "Train",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/train.py",
+            "console": "integratedTerminal",
+            "args": ["-c","./config/yuval_train.yml","-m","../../output/"]
+        },
+        {
+            "name": "Train Dissonant 300",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/train.py",
+            "console": "integratedTerminal",
+            "args": ["-c","./config/yuval_train_dissonant_300.yml","-m","../../output_disonant_300/"]
+        },
+        {
+            "name": "Generate",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/generate.py",
+            "console": "integratedTerminal",
+            "args": ["-c","./config/yuval_generate.yml","-m","../../output/"]
+        },
+        {
+            "name": "Generate Dissonant 300",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/generate.py",
+            "console": "integratedTerminal",
+            "args": ["-c","./config/yuval_generate_dissonant_300.yml","-m","../../output_disonant_300/"]
+        },
+        {
+            "name": "Preprocess",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/preprocess.py",
+            "console": "integratedTerminal",
+            "args": ["/home/beer/yuval/data/midi/classic_piano_300/","/home/beer/yuval/data/preprocess/classic_piano_300/"]
+        }
+    ]
+}

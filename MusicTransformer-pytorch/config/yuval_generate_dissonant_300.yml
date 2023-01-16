@@ -1,0 +1,8 @@
+save_path: '../../Generate_output_dissonance_300/'
+condition_file:
+length: 400
+threshold_len: 200
+
+embedding_dim: 512
+num_layers: 6
+max_seq: 1024
